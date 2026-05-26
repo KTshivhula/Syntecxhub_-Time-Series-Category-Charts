@@ -1,10 +1,7 @@
 # Syntecxhub_-Time-Series-Category-Charts
 Superstore sales analysis: line charts (daily/monthly/quarterly), bar chart, pie chart. PNG exports. Jupyter notebook + README with formatting discussion. Python, pandas, matplotlib.
-# =====================================================
-# Save Final Summary Report as README.md (for GitHub)
-# =====================================================
 
-readme_content = """# Project 1: Time Series & Category Charts – Summary Report
+ # Project 1: Time Series & Category Charts – Summary Report
 
 **Author:** Khoro Avhavhoni Tshivhula  
 **Date:** May 26, 2026
