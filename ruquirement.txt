@@ -1,0 +1,7 @@
+Package versions in this environment:
+==================================================
+pandas     : 2.3.3
+numpy      : 2.3.5
+matplotlib : 3.10.7
+openpyxl   : 3.1.5
+IPython    : 9.8.0

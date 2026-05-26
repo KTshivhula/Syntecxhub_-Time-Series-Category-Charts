@@ -1,0 +1,67 @@
+================================================================================
+PROJECT 1: TIME SERIES & CATEGORY CHARTS – SUMMARY REPORT
+================================================================================
+Author: Khoro Avhavhoni Tshivhula
+Date:   May 26, 2026
+================================================================================
+
+NUMERIC SUMMARY
+----------------------------------------
+Time period: 2011-01-01 to 2014-12-31
+Total sales (all categories): $12,642,501.91
+
+Sales by category:
+  - Technology: $4,744,557.50 (37.5%)
+  - Furniture: $4,110,874.19 (32.5%)
+  - Office Supplies: $3,787,070.23 (30.0%)
+
+Best performing month: 2014-11 ($555,279.03)
+Best performing quarter: 2014Q4 ($1,481,189.35)
+
+DISCUSSION: CHART CHOICES & FORMATTING
+----------------------------------------
+
+1. TIME SERIES LINE CHARTS
+   - Daily line chart: Shows raw fluctuations (1,430 points). No data labels (too cluttered).
+     Formatting: thin blue line, rotated x-labels, grid, legend.
+   - Monthly line chart: 48 points, reveals seasonality. No labels (would overlap).
+     Formatting: red markers, 90° rotated labels, dashed grid.
+   - Quarterly line chart: 16 points, with value labels (best practice: labels only when n <= 20).
+     Formatting: green dashed line, square markers, bold dollar labels offset above points.
+
+2. BAR CHART (CATEGORY COMPARISON)
+   - Why: Best for comparing discrete categories and showing rank.
+   - Sorting: Descending order (largest first).
+   - Labels: Dollar amounts above bars (3% offset).
+   - Y-axis: Formatted as $1,000,000 with custom ticker.
+   - Grid: Only horizontal, dashed, light grey.
+   - Spines: Top and right removed for clean look.
+
+3. PIE CHART (SHARE OF SALES)
+   - Why: Shows part-to-whole relationship (percentages).
+   - Inside labels: Percent + dollar amount (e.g., '37.5% ($4,744,558)').
+   - Exploded slice: Largest category (Technology) pulled out slightly.
+   - Colours: Matched bar chart for consistency.
+   - Caution: Pie charts work best with <=5 categories (here 3 is ideal).
+
+4. GENERAL FORMATTING CHOICES (ALL CHARTS)
+   - Resolution: 150 dpi PNG, bbox_inches='tight'.
+   - Titles: Bold, size 14, descriptive.
+   - Axis labels: Include units ($ or USD).
+   - Legends: Placed upper left where needed.
+   - Layout: tight_layout() prevents clipping.
+
+5. DATA LABELS BEST PRACTICE
+   - Applied only when number of points <= 20 (quarterly chart).
+   - Avoided on monthly (48 points) and daily (1,430 points) to prevent clutter.
+
+6. INSIGHTS FROM THE DATA
+   - Technology leads with 37.5% of total sales, followed by Furniture (32.5%) and Office Supplies (30.0%).
+   - Seasonal pattern: Q4 (October-December) consistently shows highest sales.
+   - The distribution is fairly balanced across the three main categories.
+
+================================================================================
+Charts saved to: B:\Data Science\Syntexhub Internship\week2\week2\Time series & category charts\charts
+Raw data saved to: B:\Data Science\Syntexhub Internship\week2\week2\Time series & category charts\data
+This report saved to: B:\Data Science\Syntexhub Internship\week2\week2\Time series & category charts\output\summary_report.txt
+================================================================================
